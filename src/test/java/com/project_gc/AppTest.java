@@ -1,6 +1,7 @@
 package com.project_gc;
 
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 
@@ -9,14 +10,14 @@ public class AppTest {
     public void testFahrenheitToCelsius() {
         App converter = new App();
         double result = converter.fahrenheitToCelsius(32.0);
-        assertEquals(100.0, result, 0.001);
+        assertEquals(0.0, result, 0.001);
     }
 
     @Test
     public void testFahrenheitToCelsiusNegative() {
         App converter = new App();
         double result = converter.fahrenheitToCelsius(-40.0);
-        assertEquals(-10.0, result, 0.001);
+        assertEquals(-40.0, result, 0.001);
     }
 
     @Test
